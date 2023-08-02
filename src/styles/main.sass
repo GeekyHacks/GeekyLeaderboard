@@ -1,61 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
-
-$primary-color: #2fa8cc
-$secondary-color: #f4f4f4
-$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)
+@import global
 
 *
     box-sizing: border-box
+    margin: 0
+    padding: 0
+    list-style: none
+    outline: none
+    text-decoration: none
 
 body
-    background-color: $primary-color
+    background-color: transparent
     font-family: 'Roboto', sans-serif
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    height: 100vh
-    overflow: hidden
+    font-size: 12px
     margin: 0
-    padding: 20px
+    text-shadow: 0.4px .2 black
+    background-color: $primary-color
+    margin: 5px 10px
 
-.container
-    background-color: $secondary-color
-    border-radius: 10px
-    box-shadow: $box-shadow
-    padding: 50px 20px
-    text-align: center
-    max-width: 100%
-    width: 800px
-
+h1, h2, h3,li, input
+    color: $fontColor
+h1
+    font-size: 1.4rem
 h3
-    margin: 0
-    opacity: 0.5
-    letter-spacing: 2px
+    font-size: 1rem
+li, input, a
+    border-radius: .15rem
+    font-size: .8rem
 
-img
-    width: 100px
-    margin-bottom: 20px
+header
+    margin-top: 2rem
 
-.joke
-    font-size: 30px
-    letter-spacing: 1px
-    line-height: 40px
-    margin: 50px auto
-    max-width: 600px
+section
+    margin-top: 2rem
+    @include rowFlex
+    justify-content: space-between
+    align-items: stretch
+    gap: .4rem
+    white-space: nowrap
+    font-size: 1rem
+
+.Side
+    flex: 1
+    gap: .5rem
+    @include columnFlex
+    justify-content: center
+    padding: .5rem .2rem
+    background: $secondary-color
+    box-shadow: $box-shadow
+    border-radius: .2rem
+
+    .btn
+        align-self: flex-end
+
+.fstSect
+    @include rowFlex
+    justify-content: space-between
+    align-items: center
+    gap: .5rem
 
 .btn
-    background-color: $primary-color
-    color: $secondary-color
-    border: 0
-    border-radius: 10px
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)
-    padding: 14px 40px
-    font-size: 16px
-    cursor: pointer
+    @include button
 
-    &:active
-        transform: scale(0.98)
+.recentScores
+    background: $secondary-color
+    gap: .2rem
+    @include columnFlex
+    text-align: left
 
-    &:focus
-        outline: 0
+    li
+        border: 1px black solid
+        padding: .2rem
+
+input
+    padding: .2rem
+
+footer
+    position: fixed
+    top: auto
+    bottom: .6rem
+    // width: 100%
+
+@media ( min-width: 768px  )
+    body
+        font-size: 18px
+        padding-left: $qlpadding
+        padding-right: $qrpadding
+
+    section
+        gap: 2rem
+        padding-left: $Qlpadding
+        padding-right: $Qrpadding
+@media ( min-width: 999px  )
+    body
+        font-size: 23px

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  background-color: #c2e2ea;
+  margin: 5px 10px;
+}
+
+h1,
+h2,
+h3,
+li,
+input {
+  color: #002d67;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+li,
+input,
+a {
+  border-radius: 0.15rem;
+  font-size: 0.8rem;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.4rem;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.Side {
+  flex: 1;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 0.2rem;
+  background: #72bbce;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+}
+
+.btn {
+  transition: all 0.5s;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #002d67;
+  background-color: #c2e2ea !important;
+  border: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.Side .btn {
+  align-self: flex-end;
+}
+
+.fstSect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.recentScores {
+  background: #72bbce;
+  gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.recentScores li {
+  border: 1px black solid;
+  padding: 0.2rem;
+}
+
+input {
+  padding: 0.2rem;
+}
+
+footer {
+  position: fixed;
+  top: auto;
+  bottom: 0.6rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding-left: calc(12% - 80px);
+    padding-right: calc(12% - 80px);
+  }
+
+  section {
+    gap: 2rem;
+    padding-left: calc(25% - 120px);
+    padding-right: calc(25% - 120px);
+  }
+}
+
+@media (min-width: 999px) {
+  body {
+    font-size: 23px;
+  }
+}

@@ -31,5 +31,8 @@
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "stylelint-config-standard-scss": "^10.0.0"
   }
 }

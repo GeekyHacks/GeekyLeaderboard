@@ -1,7 +1,7 @@
 {
-  "name": "webpacktemplate",
+  "name": "GeekyLeaderboard",
   "version": "1.0.0",
-  "description": "This  repo can be used for projects that use webpack bundling.",
+  "description": "This repo is built with Webpack and will include the usage of API, add items, remove Items , view Items, and edit items by many users. Its mainly to practice how to use API.",
   "main": "index.js",
   "scripts": {
     "build": "webpack",

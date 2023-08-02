@@ -24,66 +24,137 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.c
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
 }
 
 body {
-  background-color: #2fa8cc;
+  background-color: transparent;
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  font-size: 12px;
   margin: 0;
-  padding: 20px;
+  text-shadow: 0.4px 0.2 black;
+  background-color: #c2e2ea;
+  margin: 5px 10px;
 }
 
-.container {
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 50px 20px;
-  text-align: center;
-  max-width: 100%;
-  width: 800px;
+h1, h2, h3, li, input {
+  color: #002d67;
+}
+
+h1 {
+  font-size: 1.4rem;
 }
 
 h3 {
-  margin: 0;
-  opacity: 0.5;
-  letter-spacing: 2px;
+  font-size: 1rem;
 }
 
-img {
-  width: 100px;
-  margin-bottom: 20px;
+li, input, a {
+  border-radius: 0.15rem;
+  font-size: 0.8rem;
 }
 
-.joke {
-  font-size: 30px;
-  letter-spacing: 1px;
-  line-height: 40px;
-  margin: 50px auto;
-  max-width: 600px;
+header {
+  margin-top: 2rem;
+}
+
+section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.4rem;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.Side {
+  flex: 1;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 0.2rem;
+  background: #72bbce;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+}
+.Side .btn {
+  align-self: flex-end;
+}
+
+.fstSect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .btn {
-  background-color: #2fa8cc;
-  color: #f4f4f4;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 14px 40px;
-  font-size: 16px;
+  transition: all 0.5s;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #002d67;
+  background-color: #c2e2ea !important;
+  border: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 4px;
   cursor: pointer;
+  text-align: center;
 }
 .btn:active {
   transform: scale(0.98);
 }
 .btn:focus {
   outline: 0;
-}`, "",{"version":3,"sources":["webpack://./src/styles/main.sass"],"names":[],"mappings":"AAMA;EACI,sBAAA;AAJJ;;AAMA;EACI,yBARY;EASZ,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;EACA,SAAA;EACA,aAAA;AAHJ;;AAKA;EACI,yBAnBc;EAoBd,mBAAA;EACA,wEApBS;EAqBT,kBAAA;EACA,kBAAA;EACA,eAAA;EACA,YAAA;AAFJ;;AAIA;EACI,SAAA;EACA,YAAA;EACA,mBAAA;AADJ;;AAGA;EACI,YAAA;EACA,mBAAA;AAAJ;;AAEA;EACI,eAAA;EACA,mBAAA;EACA,iBAAA;EACA,iBAAA;EACA,gBAAA;AACJ;;AACA;EACI,yBA7CY;EA8CZ,cA7Cc;EA8Cd,SAAA;EACA,mBAAA;EACA,uEAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;AAEJ;AAAI;EACI,sBAAA;AAER;AAAI;EACI,UAAA;AAER","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')\r\n\r\n$primary-color: #2fa8cc\r\n$secondary-color: #f4f4f4\r\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n\r\n*\r\n    box-sizing: border-box\r\n\r\nbody\r\n    background-color: $primary-color\r\n    font-family: 'Roboto', sans-serif\r\n    display: flex\r\n    flex-direction: column\r\n    align-items: center\r\n    justify-content: center\r\n    height: 100vh\r\n    overflow: hidden\r\n    margin: 0\r\n    padding: 20px\r\n\r\n.container\r\n    background-color: $secondary-color\r\n    border-radius: 10px\r\n    box-shadow: $box-shadow\r\n    padding: 50px 20px\r\n    text-align: center\r\n    max-width: 100%\r\n    width: 800px\r\n\r\nh3\r\n    margin: 0\r\n    opacity: 0.5\r\n    letter-spacing: 2px\r\n\r\nimg\r\n    width: 100px\r\n    margin-bottom: 20px\r\n\r\n.joke\r\n    font-size: 30px\r\n    letter-spacing: 1px\r\n    line-height: 40px\r\n    margin: 50px auto\r\n    max-width: 600px\r\n\r\n.btn\r\n    background-color: $primary-color\r\n    color: $secondary-color\r\n    border: 0\r\n    border-radius: 10px\r\n    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n    padding: 14px 40px\r\n    font-size: 16px\r\n    cursor: pointer\r\n\r\n    &:active\r\n        transform: scale(0.98)\r\n\r\n    &:focus\r\n        outline: 0\r\n"],"sourceRoot":""}]);
+}
+
+.recentScores {
+  background: #72bbce;
+  gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.recentScores li {
+  border: 1px black solid;
+  padding: 0.2rem;
+}
+
+input {
+  padding: 0.2rem;
+}
+
+footer {
+  position: fixed;
+  top: auto;
+  bottom: 0.6rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding-left: calc(12% - 80px);
+    padding-right: calc(12% - 80px);
+  }
+  section {
+    gap: 2rem;
+    padding-left: calc(25% - 120px);
+    padding-right: calc(25% - 120px);
+  }
+}
+@media (min-width: 999px) {
+  body {
+    font-size: 23px;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/styles/main.sass","webpack://./src/styles/global.sass"],"names":[],"mappings":"AAGA;EACI,sBAAA;EACA,SAAA;EACA,UAAA;EACA,gBAAA;EACA,aAAA;EACA,qBAAA;AADJ;;AAGA;EACI,6BAAA;EACA,iCAAA;EACA,eAAA;EACA,SAAA;EACA,4BAAA;EACA,yBChBY;EDiBZ,gBAAA;AAAJ;;AAEA;EACI,cClBO;ADmBX;;AAAA;EACI,iBAAA;AAGJ;;AAFA;EACI,eAAA;AAKJ;;AAJA;EACI,sBAAA;EACA,iBAAA;AAOJ;;AALA;EACI,gBAAA;AAQJ;;AANA;EACI,gBAAA;EClBA,aAAA;EACA,mBAAA;EDmBA,8BAAA;EACA,oBAAA;EACA,WAAA;EACA,mBAAA;EACA,eAAA;AAUJ;;AARA;EACI,OAAA;EACA,WAAA;EC/BA,aAAA;EACA,sBAAA;EDgCA,uBAAA;EACA,sBAAA;EACA,mBC9Cc;ED+Cd,wEC7CS;ED8CT,qBAAA;AAYJ;AAVI;EACI,oBAAA;AAYR;;AAVA;ECvCI,aAAA;EACA,mBAAA;EDwCA,8BAAA;EACA,mBAAA;EACA,WAAA;AAcJ;;AAZA;EC1CI,oBAAA;EACA,kBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cApBO;EAqBP,oCAAA;EACA,WAAA;EACA,wEAtBS;EAuBT,YAAA;EACA,eAAA;EACA,kBAAA;AD0DJ;ACzDI;EACI,sBAAA;AD2DR;ACzDI;EACI,UAAA;AD2DR;;AA7BA;EACI,mBC/Dc;EDgEd,WAAA;ECrDA,aAAA;EACA,sBAAA;EDsDA,gBAAA;AAiCJ;AA/BI;EACI,uBAAA;EACA,eAAA;AAiCR;;AA/BA;EACI,eAAA;AAkCJ;;AAhCA;EACI,eAAA;EACA,SAAA;EACA,cAAA;AAmCJ;;AAhCA;EACI;IACI,eAAA;IACA,8BC/EI;IDgFJ,+BClFI;EDqHV;EAjCE;IACI,SAAA;IACA,+BCnFI;IDoFJ,gCCtFI;EDyHV;AACF;AAnCA;EACI;IACI,eAAA;EAqCN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')\r\n@import global\r\n\r\n*\r\n    box-sizing: border-box\r\n    margin: 0\r\n    padding: 0\r\n    list-style: none\r\n    outline: none\r\n    text-decoration: none\r\n\r\nbody\r\n    background-color: transparent\r\n    font-family: 'Roboto', sans-serif\r\n    font-size: 12px\r\n    margin: 0\r\n    text-shadow: 0.4px .2 black\r\n    background-color: $primary-color\r\n    margin: 5px 10px\r\n\r\nh1, h2, h3,li, input\r\n    color: $fontColor\r\nh1\r\n    font-size: 1.4rem\r\nh3\r\n    font-size: 1rem\r\nli, input, a\r\n    border-radius: .15rem\r\n    font-size: .8rem\r\n\r\nheader\r\n    margin-top: 2rem\r\n\r\nsection\r\n    margin-top: 2rem\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: stretch\r\n    gap: .4rem\r\n    white-space: nowrap\r\n    font-size: 1rem\r\n\r\n.Side\r\n    flex: 1\r\n    gap: .5rem\r\n    @include columnFlex\r\n    justify-content: center\r\n    padding: .5rem .2rem\r\n    background: $secondary-color\r\n    box-shadow: $box-shadow\r\n    border-radius: .2rem\r\n\r\n    .btn\r\n        align-self: flex-end\r\n\r\n.fstSect\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    gap: .5rem\r\n\r\n.btn\r\n    @include button\r\n\r\n.recentScores\r\n    background: $secondary-color\r\n    gap: .2rem\r\n    @include columnFlex\r\n    text-align: left\r\n\r\n    li\r\n        border: 1px black solid\r\n        padding: .2rem\r\n\r\ninput\r\n    padding: .2rem\r\n\r\nfooter\r\n    position: fixed\r\n    top: auto\r\n    bottom: .6rem\r\n    // width: 100%\r\n\r\n@media ( min-width: 768px  )\r\n    body\r\n        font-size: 18px\r\n        padding-left: $qlpadding\r\n        padding-right: $qrpadding\r\n\r\n    section\r\n        gap: 2rem\r\n        padding-left: $Qlpadding\r\n        padding-right: $Qrpadding\r\n@media ( min-width: 999px  )\r\n    body\r\n        font-size: 23px\r\n","$InterFont: \"Inter\", sans-serif\r\n$primary-color: #c2e2ea\r\n$secondary-color: #72bbce\r\n$fontColor:#002d67\r\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n$qrpadding: calc( 12% - 80px )\r\n$Qrpadding: calc( 25% - 120px )\r\n$qlpadding: calc( 12% - 80px )\r\n$Qlpadding: calc( 25% - 120px )\r\n\r\n// mixings\r\n\r\n@mixin columnFlex\r\n    display: flex\r\n    flex-direction: column\r\n@mixin rowFlex\r\n    display: flex\r\n    flex-direction: row\r\n@mixin button\r\n    transition: all 0.5s\r\n    border-radius: 4px\r\n    font-size: .9rem\r\n    font-weight: 600\r\n    color: $fontColor\r\n    background-color: $primary-color !important\r\n    border: 2px\r\n    box-shadow: $box-shadow\r\n    padding: 4px\r\n    cursor: pointer\r\n    text-align: center\r\n    &:active\r\n        transform: scale(0.98)\r\n\r\n    &:focus\r\n        outline: 0\r\n\r\n@mixin oneFiveGrid\r\n    display: grid\r\n    grid-template-columns: 1fr\r\n    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr\r\n@mixin fiveOneGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr\r\n    grid-auto-rows: 1fr\r\n@mixin twoThreeGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr\r\n    grid-template-rows: 1fr 1fr 1fr\r\n\r\n@mixin globalFont\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1.2rem\r\n@mixin smlInterH1\r\n    color: black\r\n    font-size: 2rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0525rem\r\n@mixin smlInterH2\r\n    color: black\r\n    font-size: 1.5rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0225rem\r\n@mixin smlInterH3\r\n    color: black\r\n    font-size: 1.2rem\r\n    font-family: $InterFont\r\n    font-weight: 600\r\n    letter-spacing: 0.0025rem\r\n@mixin smlInterP\r\n    color: black\r\n    font-size: .9rem\r\n    font-family: $InterFont\r\n    letter-spacing: 0.0125rem\r\n@mixin transparentText\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-repeat: no-repeat\r\n    -webkit-background-clip: text\r\n    -webkit-text-fill-color: transparent\r\n@mixin transparentBg\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-blend-mode: color-burn\r\n    background-repeat: no-repeat\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -528,16 +599,6 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ "./src/assets/laughing.svg":
-/*!*********************************!*\
-  !*** ./src/assets/laughing.svg ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "laughing.svg";
-
 /***/ })
 
 /******/ 	});
@@ -591,18 +652,6 @@ module.exports = __webpack_require__.p + "laughing.svg";
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -619,29 +668,6 @@ module.exports = __webpack_require__.p + "laughing.svg";
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -656,13 +682,9 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.sass */ "./src/styles/main.sass");
-/* harmony import */ var _assets_laughing_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/laughing.svg */ "./src/assets/laughing.svg");
 
-
-var laughImg = document.getElementById('laughImg');
-laughImg.src = _assets_laughing_svg__WEBPACK_IMPORTED_MODULE_1__;
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle0204b905f91de3b9f232.js.map
+//# sourceMappingURL=bundle67411f6b5e09fba82fae.js.map

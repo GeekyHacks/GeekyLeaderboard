@@ -2,19 +2,19 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.sass":
-/*!***********************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.sass ***!
-  \***********************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/Sass/main.sass":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/Sass/main.sass ***!
+  \****************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -73,6 +73,26 @@ section {
   font-size: 1rem;
 }
 
+.btn {
+  transition: all 0.5s;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #002d67;
+  background-color: #c2e2ea !important;
+  border: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:focus {
+  outline: 0;
+}
+
 .Side {
   flex: 1;
   gap: 0.5rem;
@@ -94,26 +114,6 @@ section {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-}
-
-.btn {
-  transition: all 0.5s;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #002d67;
-  background-color: #c2e2ea !important;
-  border: 2px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 4px;
-  cursor: pointer;
-  text-align: center;
-}
-.btn:active {
-  transform: scale(0.98);
-}
-.btn:focus {
-  outline: 0;
 }
 
 .recentScores {
@@ -154,7 +154,7 @@ footer {
   body {
     font-size: 23px;
   }
-}`, "",{"version":3,"sources":["webpack://./src/styles/main.sass","webpack://./src/styles/global.sass"],"names":[],"mappings":"AAGA;EACI,sBAAA;EACA,SAAA;EACA,UAAA;EACA,gBAAA;EACA,aAAA;EACA,qBAAA;AADJ;;AAGA;EACI,6BAAA;EACA,iCAAA;EACA,eAAA;EACA,SAAA;EACA,4BAAA;EACA,yBChBY;EDiBZ,gBAAA;AAAJ;;AAEA;EACI,cClBO;ADmBX;;AAAA;EACI,iBAAA;AAGJ;;AAFA;EACI,eAAA;AAKJ;;AAJA;EACI,sBAAA;EACA,iBAAA;AAOJ;;AALA;EACI,gBAAA;AAQJ;;AANA;EACI,gBAAA;EClBA,aAAA;EACA,mBAAA;EDmBA,8BAAA;EACA,oBAAA;EACA,WAAA;EACA,mBAAA;EACA,eAAA;AAUJ;;AARA;EACI,OAAA;EACA,WAAA;EC/BA,aAAA;EACA,sBAAA;EDgCA,uBAAA;EACA,sBAAA;EACA,mBC9Cc;ED+Cd,wEC7CS;ED8CT,qBAAA;AAYJ;AAVI;EACI,oBAAA;AAYR;;AAVA;ECvCI,aAAA;EACA,mBAAA;EDwCA,8BAAA;EACA,mBAAA;EACA,WAAA;AAcJ;;AAZA;EC1CI,oBAAA;EACA,kBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cApBO;EAqBP,oCAAA;EACA,WAAA;EACA,wEAtBS;EAuBT,YAAA;EACA,eAAA;EACA,kBAAA;AD0DJ;ACzDI;EACI,sBAAA;AD2DR;ACzDI;EACI,UAAA;AD2DR;;AA7BA;EACI,mBC/Dc;EDgEd,WAAA;ECrDA,aAAA;EACA,sBAAA;EDsDA,gBAAA;AAiCJ;AA/BI;EACI,uBAAA;EACA,eAAA;AAiCR;;AA/BA;EACI,eAAA;AAkCJ;;AAhCA;EACI,eAAA;EACA,SAAA;EACA,cAAA;AAmCJ;;AAhCA;EACI;IACI,eAAA;IACA,8BC/EI;IDgFJ,+BClFI;EDqHV;EAjCE;IACI,SAAA;IACA,+BCnFI;IDoFJ,gCCtFI;EDyHV;AACF;AAnCA;EACI;IACI,eAAA;EAqCN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')\r\n@import global\r\n\r\n*\r\n    box-sizing: border-box\r\n    margin: 0\r\n    padding: 0\r\n    list-style: none\r\n    outline: none\r\n    text-decoration: none\r\n\r\nbody\r\n    background-color: transparent\r\n    font-family: 'Roboto', sans-serif\r\n    font-size: 12px\r\n    margin: 0\r\n    text-shadow: 0.4px .2 black\r\n    background-color: $primary-color\r\n    margin: 5px 10px\r\n\r\nh1, h2, h3,li, input\r\n    color: $fontColor\r\nh1\r\n    font-size: 1.4rem\r\nh3\r\n    font-size: 1rem\r\nli, input, a\r\n    border-radius: .15rem\r\n    font-size: .8rem\r\n\r\nheader\r\n    margin-top: 2rem\r\n\r\nsection\r\n    margin-top: 2rem\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: stretch\r\n    gap: .4rem\r\n    white-space: nowrap\r\n    font-size: 1rem\r\n\r\n.Side\r\n    flex: 1\r\n    gap: .5rem\r\n    @include columnFlex\r\n    justify-content: center\r\n    padding: .5rem .2rem\r\n    background: $secondary-color\r\n    box-shadow: $box-shadow\r\n    border-radius: .2rem\r\n\r\n    .btn\r\n        align-self: flex-end\r\n\r\n.fstSect\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    gap: .5rem\r\n\r\n.btn\r\n    @include button\r\n\r\n.recentScores\r\n    background: $secondary-color\r\n    gap: .2rem\r\n    @include columnFlex\r\n    text-align: left\r\n\r\n    li\r\n        border: 1px black solid\r\n        padding: .2rem\r\n\r\ninput\r\n    padding: .2rem\r\n\r\nfooter\r\n    position: fixed\r\n    top: auto\r\n    bottom: .6rem\r\n    // width: 100%\r\n\r\n@media ( min-width: 768px  )\r\n    body\r\n        font-size: 18px\r\n        padding-left: $qlpadding\r\n        padding-right: $qrpadding\r\n\r\n    section\r\n        gap: 2rem\r\n        padding-left: $Qlpadding\r\n        padding-right: $Qrpadding\r\n@media ( min-width: 999px  )\r\n    body\r\n        font-size: 23px\r\n","$InterFont: \"Inter\", sans-serif\r\n$primary-color: #c2e2ea\r\n$secondary-color: #72bbce\r\n$fontColor:#002d67\r\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n$qrpadding: calc( 12% - 80px )\r\n$Qrpadding: calc( 25% - 120px )\r\n$qlpadding: calc( 12% - 80px )\r\n$Qlpadding: calc( 25% - 120px )\r\n\r\n// mixings\r\n\r\n@mixin columnFlex\r\n    display: flex\r\n    flex-direction: column\r\n@mixin rowFlex\r\n    display: flex\r\n    flex-direction: row\r\n@mixin button\r\n    transition: all 0.5s\r\n    border-radius: 4px\r\n    font-size: .9rem\r\n    font-weight: 600\r\n    color: $fontColor\r\n    background-color: $primary-color !important\r\n    border: 2px\r\n    box-shadow: $box-shadow\r\n    padding: 4px\r\n    cursor: pointer\r\n    text-align: center\r\n    &:active\r\n        transform: scale(0.98)\r\n\r\n    &:focus\r\n        outline: 0\r\n\r\n@mixin oneFiveGrid\r\n    display: grid\r\n    grid-template-columns: 1fr\r\n    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr\r\n@mixin fiveOneGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr\r\n    grid-auto-rows: 1fr\r\n@mixin twoThreeGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr\r\n    grid-template-rows: 1fr 1fr 1fr\r\n\r\n@mixin globalFont\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1.2rem\r\n@mixin smlInterH1\r\n    color: black\r\n    font-size: 2rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0525rem\r\n@mixin smlInterH2\r\n    color: black\r\n    font-size: 1.5rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0225rem\r\n@mixin smlInterH3\r\n    color: black\r\n    font-size: 1.2rem\r\n    font-family: $InterFont\r\n    font-weight: 600\r\n    letter-spacing: 0.0025rem\r\n@mixin smlInterP\r\n    color: black\r\n    font-size: .9rem\r\n    font-family: $InterFont\r\n    letter-spacing: 0.0125rem\r\n@mixin transparentText\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-repeat: no-repeat\r\n    -webkit-background-clip: text\r\n    -webkit-text-fill-color: transparent\r\n@mixin transparentBg\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-blend-mode: color-burn\r\n    background-repeat: no-repeat\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles/Sass/main.sass","webpack://./src/styles/Sass/global.sass"],"names":[],"mappings":"AAGA;EACI,sBAAA;EACA,SAAA;EACA,UAAA;EACA,gBAAA;EACA,aAAA;EACA,qBAAA;AADJ;;AAGA;EACI,6BAAA;EACA,iCAAA;EACA,eAAA;EACA,SAAA;EACA,4BAAA;EACA,yBChBY;EDiBZ,gBAAA;AAAJ;;AAEA;EACI,cClBQ;ADmBZ;;AACA;EACI,iBAAA;AAEJ;;AAAA;EACI,eAAA;AAGJ;;AADA;EACI,sBAAA;EACA,iBAAA;AAIJ;;AAFA;EACI,gBAAA;AAKJ;;AAHA;EACI,gBAAA;ECtBA,aAAA;EACA,mBAAA;EDuBA,8BAAA;EACA,oBAAA;EACA,WAAA;EACA,mBAAA;EACA,eAAA;AAOJ;;AALA;EC1BI,oBAAA;EACA,kBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cApBQ;EAqBR,oCAAA;EACA,WAAA;EACA,wEAtBS;EAuBT,YAAA;EACA,eAAA;EACA,kBAAA;ADmCJ;ACjCI;EACI,sBAAA;ADmCR;ACjCI;EACI,UAAA;ADmCR;;AAtBA;EACI,OAAA;EACA,WAAA;ECvCA,aAAA;EACA,sBAAA;EDwCA,uBAAA;EACA,sBAAA;EACA,mBCpDc;EDqDd,wECnDS;EDoDT,qBAAA;AA0BJ;AAxBI;EACI,oBAAA;AA0BR;;AAxBA;EC9CI,aAAA;EACA,mBAAA;ED+CA,8BAAA;EACA,mBAAA;EACA,WAAA;AA4BJ;;AA1BA;EACI,mBClEc;EDmEd,WAAA;EC1DA,aAAA;EACA,sBAAA;ED2DA,gBAAA;AA8BJ;AA5BI;EACI,uBAAA;EACA,eAAA;AA8BR;;AA5BA;EACI,eAAA;AA+BJ;;AA7BA;EACI,eAAA;EACA,SAAA;EACA,cAAA;AAgCJ;;AA7BA;EACI;IACI,eAAA;IACA,8BClFI;IDmFJ,+BCrFI;EDqHV;EA9BE;IACI,SAAA;IACA,+BCtFI;IDuFJ,gCCzFI;EDyHV;AACF;AAhCA;EACI;IACI,eAAA;EAkCN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')\r\n@import global\r\n\r\n*\r\n    box-sizing: border-box\r\n    margin: 0\r\n    padding: 0\r\n    list-style: none\r\n    outline: none\r\n    text-decoration: none\r\n\r\nbody\r\n    background-color: transparent\r\n    font-family: 'Roboto', sans-serif\r\n    font-size: 12px\r\n    margin: 0\r\n    text-shadow: 0.4px .2 black\r\n    background-color: $primary-color\r\n    margin: 5px 10px\r\n\r\nh1, h2, h3,li, input\r\n    color: $fontColor\r\n\r\nh1\r\n    font-size: 1.4rem\r\n\r\nh3\r\n    font-size: 1rem\r\n    \r\nli, input, a\r\n    border-radius: .15rem\r\n    font-size: .8rem\r\n\r\nheader\r\n    margin-top: 2rem\r\n\r\nsection\r\n    margin-top: 2rem\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: stretch\r\n    gap: .4rem\r\n    white-space: nowrap\r\n    font-size: 1rem\r\n\r\n.btn\r\n    @include button\r\n\r\n.Side\r\n    flex: 1\r\n    gap: .5rem\r\n    @include columnFlex\r\n    justify-content: center\r\n    padding: .5rem .2rem\r\n    background: $secondary-color\r\n    box-shadow: $box-shadow\r\n    border-radius: .2rem\r\n\r\n    .btn\r\n        align-self: flex-end\r\n\r\n.fstSect\r\n    @include rowFlex\r\n    justify-content: space-between\r\n    align-items: center\r\n    gap: .5rem\r\n\r\n.recentScores\r\n    background: $secondary-color\r\n    gap: .2rem\r\n    @include columnFlex\r\n    text-align: left\r\n\r\n    li\r\n        border: 1px black solid\r\n        padding: .2rem\r\n\r\ninput\r\n    padding: .2rem\r\n\r\nfooter\r\n    position: fixed\r\n    top: auto\r\n    bottom: .6rem\r\n    // width: 100%\r\n\r\n@media ( min-width: 768px  )\r\n    body\r\n        font-size: 18px\r\n        padding-left: $qlpadding\r\n        padding-right: $qrpadding\r\n\r\n    section\r\n        gap: 2rem\r\n        padding-left: $Qlpadding\r\n        padding-right: $Qrpadding\r\n@media ( min-width: 999px  )\r\n    body\r\n        font-size: 23px\r\n","$InterFont: \"Inter\", sans-serif\r\n$primary-color: #c2e2ea\r\n$secondary-color: #72bbce\r\n$fontColor: #002d67\r\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1)\r\n$qrpadding: calc( 12% - 80px )\r\n$Qrpadding: calc( 25% - 120px )\r\n$qlpadding: calc( 12% - 80px )\r\n$Qlpadding: calc( 25% - 120px )\r\n\r\n@mixin columnFlex\r\n    display: flex\r\n    flex-direction: column\r\n\r\n@mixin rowFlex\r\n    display: flex\r\n    flex-direction: row\r\n\r\n@mixin button\r\n    transition: all 0.5s\r\n    border-radius: 4px\r\n    font-size: .9rem\r\n    font-weight: 600\r\n    color: $fontColor\r\n    background-color: $primary-color !important\r\n    border: 2px\r\n    box-shadow: $box-shadow\r\n    padding: 3px\r\n    cursor: pointer\r\n    text-align: center\r\n\r\n    &:active\r\n        transform: scale(0.98)\r\n\r\n    &:focus\r\n        outline: 0\r\n\r\n@mixin oneFiveGrid\r\n    display: grid\r\n    grid-template-columns: 1fr\r\n    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr\r\n\r\n@mixin fiveOneGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr\r\n    grid-auto-rows: 1fr\r\n\r\n@mixin twoThreeGrid\r\n    display: grid\r\n    grid-template-columns: 1fr 1fr\r\n    grid-template-rows: 1fr 1fr 1fr\r\n\r\n@mixin globalFont\r\n    font-family: $InterFont\r\n    font-weight: 500\r\n    font-size: 1.2rem\r\n\r\n@mixin smlInterH1\r\n    color: black\r\n    font-size: 2rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0525rem\r\n\r\n@mixin smlInterH2\r\n    color: black\r\n    font-size: 1.5rem\r\n    font-family: $InterFont\r\n    font-weight: 800\r\n    letter-spacing: -0.0225rem\r\n\r\n@mixin smlInterH3\r\n    color: black\r\n    font-size: 1.2rem\r\n    font-family: $InterFont\r\n    font-weight: 600\r\n    letter-spacing: 0.0025rem\r\n\r\n@mixin smlInterP\r\n    color: black\r\n    font-size: .9rem\r\n    font-family: $InterFont\r\n    letter-spacing: 0.0125rem\r\n\r\n@mixin transparentText\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-repeat: no-repeat\r\n    -webkit-background-clip: text\r\n    -webkit-text-fill-color: transparent\r\n\r\n@mixin transparentBg\r\n    background-image: url('#{$assetsPath}/Flag-Yemen.webp')\r\n    background-size: 100% 100%\r\n    background-blend-mode: color-burn\r\n    background-repeat: no-repeat\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -280,29 +280,29 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/styles/main.sass":
-/*!******************************!*\
-  !*** ./src/styles/main.sass ***!
-  \******************************/
+/***/ "./src/styles/Sass/main.sass":
+/*!***********************************!*\
+  !*** ./src/styles/Sass/main.sass ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_main_sass__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./main.sass */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.sass");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_main_sass__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./main.sass */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/Sass/main.sass");
 
       
       
@@ -681,10 +681,15 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_main_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.sass */ "./src/styles/main.sass");
+/* harmony import */ var _styles_Sass_main_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/Sass/main.sass */ "./src/styles/Sass/main.sass");
 
+var body = document.querySelector('body');
+var layout = function layout() {
+  body.innerHTML = "\n    <header><h1>Leaderboard</h1></header>\n    <main>\n      <section>\n        <div class=\"Side\">\n          <div class=\"fstSect\">\n            <h3>Recent Scores</h3>\n            <button class=\"btn\">Refresh</button>\n          </div>\n          <ul class=\"recentScores\">\n            <li>Name:96</li>\n            <li>Name: 87</li>\n            <li>Name:100</li>\n          </ul>\n        </div>\n        <div class=\"Side\">\n          <h3>Add your score</h3>\n          <input type=\"text\" /><input type=\"text\" />\n          <button class=\"btn\">Submit</button>\n        </div>\n      </section>\n    </main>\n    <footer>\n      <h3 class=\"copyRights\">Copy rights reserved to <a href=\"https://github.com/GeekyHacks\">geekyhacks</a></h3>\n    </footer>\n    ";
+};
+layout();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle67411f6b5e09fba82fae.js.map
+//# sourceMappingURL=bundle7c20254a31d8f8845713.js.map

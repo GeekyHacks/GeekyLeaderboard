@@ -1,4 +1,4 @@
-# WebPackTemplate
+# Geeky Leaderboard
 
 <a name="readme-top"></a>
 
@@ -6,17 +6,18 @@
 
   <br/>
 
-  <h3><b>WebPack Template</b></h3>
-  <p>This repo can be used for projects that use webpack bundling. Take a look at  file, have a look at  </p> <a href="https://youtu.be/IZGNcSuwBZs">this video to understand webpack </a>
+  <h3><b>Geeky-Leaderboard</b></h3>
+  <p>In this project I will be using webpack to bundle my code, the project is about adding scores to a leaderboard that can be add, removed, marked, and edit using API. It will include mainly JS code and sass for styling.</p>
 
 </div>
+
 # 📗 Table of Contents
 
-- [WebPackTemplate](#webpacktemplate)
+- [Geeky Leaderboard](#Geeky-Leaderboard)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 WebPack Template ](#-webpack-template-)
-  - [Instructions](#instructions)
-  - [🛠 webpack installation webpack-installation](#-webpack-installation--webpack-installation)
+- [📖 Geeky-Leaderboard\< ](#-geeky-leaderboard-)
+  - [🚀 Live Demo ](#-live-demo-)
+- [📖 Geeky-Leaderboard\< ](#-geeky-leaderboard--1)
   - [🛠 Built With HTML, CSS and JavaScript](#-built-with-html-css-and-javascript)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -32,33 +33,16 @@
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
-# 📖 WebPack Template <a name="about-project"></a>
+# 📖 Geeky Leaderboard< <a name="about-project"></a>
 
-**WebPack Template**
-it can be used for projects that use webpack bundling.
+**Geeky Leaderboard<e**
+the project is about adding Geeky-Leaderboard that can be add, removed, marked, and edit. It will include mainly JS code and sass for styling.
 
-## Instructions <a name="Instructions"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-You will need to install the node_modules so the package.json and webpack.config work.
-copy the following commands in sequence:
+- [Live Demo Link](https://geekyhacks.github.io/GeekyLeaderboard/dist/.)
 
-- `npm i -D webpack webpack-cli`
-- `npm i -D webpack-dev-server` to install the local server
-- `npm i -D sass style-loader css-loader sass-loader` to install loaders for styling, sass, and css
-- `npm i -D html-webpack-plugin` this will istall the plugin that will make the index.html file in the dist, its based on the tmplate file in your src
-- `npm i -D babel-loader @babel/core @babel/preset-env` to install babel that will make your code run on browsers
-- `npm run build` to test if webpack is working and you will see dist folder is regenrated and you will run this command anytime you wanna add images or edit the template html file
--
-- `npm run build`
-- `npm run start` to display your dist in local server(browser just like the live server extention)
-- once webpack is working perfectly
-- (this is opitional) install the linters test packages according to Microverse requirements
-  - for eslint `npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
-  - for stylelint`npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
-  - for webhint `npm install --save-dev hint@7.x`
-- after that you should be good to start your project
-
-## 🛠 webpack installation <a name="webpack-installation"> [webpack-installation](WebPackInstallation.md)</a>
+# 📖 Geeky-Leaderboard< <a name="live-demo"></a>
 
 ## 🛠 Built With <a name="built-with">HTML, CSS and JavaScript</a>
 
@@ -76,7 +60,7 @@ copy the following commands in sequence:
 
 </a>
 
-- Can be used to startup any project using webpack
+- In this project I will be using webpack to bundle my code, the project is about adding scores to a leaderboard that can be add, removed, marked, and edit using API. It will include mainly JS code and sass for styling
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,14 +68,11 @@ copy the following commands in sequence:
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To use this template just [visit](https://github.com/GeekyHacks/WebPackTemplate)
-the repository and press on "use this template"
-
 To get a local copy up and running, follow these steps:
 
 - Open your Terminal in your VSCode.
 - Navigate to the desired directory[folder] to which you want to clone the repository to
-- [Copy & Paste] git clone you find in the code button https://github.com/GeekyHacks/WebPackTemplate.git
+- [Copy & Paste] git clone you find in the code button https://github.com/GeekyHacks/GeekyLeaderboard.git
 
 ### Prerequisites
 
@@ -106,13 +87,13 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- git clone https://github.com/GeekyHacks/WebPackTemplate.git
+- git clone https://github.com/GeekyHacks/GeekyLeaderboard.git
 
 Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/GeekyHacks/WebPackTemplate.git
+  git clone https://github.com/GeekyHacks/GeekyLeaderboard.git
 
 ```
 
@@ -126,13 +107,13 @@ Must-Install-Project-with-the-Following-Programmes:
 - Git
 - Node.js
 - npm install
+- webpack
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
 👤 **GeekyHacks**
-**Bhekisile Jozi**
 
 - GitHub: [Geekyhacks](https://github.com/GeekyHacks)
 - Twitter: [Geekydart](https://twitter.com/GeekyDart)
@@ -148,7 +129,7 @@ Must-Install-Project-with-the-Following-Programmes:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/GeekyHacks/WebPackTemplate/issues).
+Feel free to check the [issues page](https://github.com/GeekyHacks/GeekyLeaderboard/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

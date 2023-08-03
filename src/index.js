@@ -1,4 +1,5 @@
 import './styles/Sass/main.sass';
+
 const body = document.querySelector('body');
 
 const layout = () => {

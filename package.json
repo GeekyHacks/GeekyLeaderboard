@@ -1,14 +1,14 @@
 {
-  "name": "geekyleaderboard",
+  "name": "webpacktemplate",
   "version": "1.0.0",
-  "description": "This repo is built with Webpack and will include the usage of API, add items, remove Items , view Items, and edit items by many users. Its mainly to practice how to use API.",
+  "description": "This  repo can be used for projects that use webpack bundling.",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack serve"
   },
   "keywords": [],
-  "author": "GeekyHacks",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.8",
@@ -18,8 +18,8 @@
     "css-loader": "^6.8.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.28.0",
-    "hint": "^2.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "hint": "^7.1.10",
     "html-webpack-plugin": "^5.5.3",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
@@ -28,11 +28,8 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
-    "webpack": "^5.88.1",
+    "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  },
-  "dependencies": {
-    "stylelint-config-standard-scss": "^10.0.0"
   }
 }

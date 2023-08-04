@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>%= htmlWebpackPlugin.options.title %</title>
-  <script defer src="bundlef5e6f4bccee02a1c28d5.js"></script></head>
+  <script defer src="bundle5b9169b4deaffb886ce1.js"></script></head>
   <body>
     <header><h1>Leaderboard</h1></header>
     <main>
@@ -19,13 +19,19 @@
         </div>
         <form autocomplete="off">
           <label>Add your score</label>
-          <input type="text" id="name" required maxlength="15" /><input type="number" id="score" required maxlength="2" />
+          <input type="text" id="name" placeholder="Your Name" required maxlength="15" /><input
+            placeholder="Your score"
+            type="number"
+            id="score"
+            required
+            maxlength="3"
+          />
           <button id="submit" class="btn" type="submit">Submit</button>
         </form>
       </section>
     </main>
     <footer>
-      <h3 class="copyRights">Copy rights reserved to <a href="https://github.com/GeekyHacks">geekyhacks</a></h3>
+      <h4 class="copyRights">Copy rights reserved to <a href="https://github.com/GeekyHacks">geekyhacks</a></h4>
     </footer>
   </body>
 </html>

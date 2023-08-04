@@ -1,10 +1,8 @@
 import './styles/Sass/main.sass';
-import { addScore } from './modules/api.js';
+import { addScore, getScore, gameUrl } from './modules/api.js';
 import { user, score, renderList } from './modules/displayList.js';
 
-// const body = document.querySelector('body');
 const submitBtn = document.getElementById('submit');
-// const gameUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9W40RRKEzdVGseFky5fH/scores/';
 
 window.addEventListener('load', () => {
   renderList();
@@ -13,11 +11,14 @@ window.addEventListener('load', () => {
 submitBtn.addEventListener('click', async (event) => {
   event.preventDefault();
   await addScore(user.value, score.value);
+  window.location.reload();
 });
 
-// will use it next project
-// const refresh = document.getElementById('refresh');
+// to refresh
+const refresh = document.getElementById('refresh');
 
-// refresh.addEventListener('click', async () => {
-//   await deleteAPI(gameID);
-// });
+refresh.addEventListener('click', async (event) => {
+  event.preventDefault();
+  await getScore(gameUrl);
+  window.location.reload();
+});

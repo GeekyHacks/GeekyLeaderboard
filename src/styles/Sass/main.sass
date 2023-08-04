@@ -12,9 +12,8 @@
 body
     background-color: transparent
     font-family: 'Roboto', sans-serif
-    font-size: 12px
+    font-size: 10px
     margin: 0
-    text-shadow: 0.4px .2 black
     background-color: $primary-color
     margin: 5px 10px
 
@@ -25,7 +24,7 @@ h1
     font-size: 1.4rem
 
 h3
-    font-size: 1rem
+    font-size: .8rem
 
 li, input, a, .copyRights
     border-radius: .15rem
@@ -33,6 +32,8 @@ li, input, a, .copyRights
 
 header
     margin-top: 2rem
+    padding-bottom: 1.2rem
+    border-bottom: 1px solid $secondary-color
 
 section
     margin-top: 2rem
@@ -48,10 +49,11 @@ section
 
 .Side, form
     flex: 1
-    gap: .5rem
+    gap: .7rem
     @include columnFlex
-    justify-content: center
-    padding: .5rem .2rem
+    justify-content: space-evenly
+    align-items: stretch
+    padding: .5rem .3rem
     background: $secondary-color
     box-shadow: $box-shadow
     border-radius: .2rem
@@ -60,34 +62,36 @@ section
         align-self: flex-end
 
 .Side
-    overflow: scroll
+
+    .recentScores
+        background: $secondary-color
+        gap: .2rem
+        @include columnFlex
+        text-align: left
+        justify-content: center
+        overflow: auto
+        padding: .2rem
+        max-height: 270px
+
+        li
+            border: 1px black solid
+            text-align: left
+            padding: .2rem
 
 .fstSect
     @include rowFlex
     justify-content: space-between
     align-items: center
     gap: .5rem
-
-.recentScores
-    background: $secondary-color
-    gap: .2rem
-    @include columnFlex
-    text-align: left
-    justify-content: center
-    align-items: stretch
-
-    li
-        border: 1px black solid
-        text-align: left
-        padding: .2rem
-
 input
     padding: .2rem
 
 footer
+    border-bottom: 1px solid $secondary-color
     position: relative
     margin-top: 2rem
-    top: 0
+    padding-bottom: 0.1rem
+    top: auto
     bottom: 0.1rem
 
 @media ( min-width: 768px  )

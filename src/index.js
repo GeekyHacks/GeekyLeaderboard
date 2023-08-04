@@ -2,13 +2,16 @@ import './styles/Sass/main.sass';
 import { addScore, getScore, gameUrl } from './modules/api.js';
 import { user, score, renderList } from './modules/displayList.js';
 
-const submitBtn = document.getElementById('submit');
+const submit = document.getElementById('scoreForm');
 
 window.addEventListener('load', () => {
   renderList();
 });
 // this will add userScore to the APi
-submitBtn.addEventListener('click', async (event) => {
+submit.addEventListener('submit', async (event) => {
+  if (score.value === '' && user.value === '') {
+    return;
+  }
   event.preventDefault();
   await addScore(user.value, score.value);
   window.location.reload();

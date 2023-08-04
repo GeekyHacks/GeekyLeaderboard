@@ -26,7 +26,7 @@ h1
 
 h3
     font-size: 1rem
-    
+
 li, input, a
     border-radius: .15rem
     font-size: .8rem
@@ -51,13 +51,25 @@ section
     gap: .5rem
     @include columnFlex
     justify-content: center
+    align-items: center
     padding: .5rem .2rem
     background: $secondary-color
     box-shadow: $box-shadow
     border-radius: .2rem
+    // overflow-y: scroll
+    height: 250px
 
     .btn
         align-self: flex-end
+form
+    flex: 1
+    gap: .5rem
+    @include columnFlex
+    justify-content: start
+    padding: .5rem .2rem
+    // background: $secondary-color
+    box-shadow: $box-shadow
+    border-radius: .2rem
 
 .fstSect
     @include rowFlex

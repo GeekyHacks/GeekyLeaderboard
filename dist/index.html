@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>%= htmlWebpackPlugin.options.title %</title>
-  <script defer src="bundle7c20254a31d8f8845713.js"></script></head>
+  <script defer src="bundleec72d4adfe79581ef7f0.js"></script></head>
   <body>
-   
+    <header><h1>Leaderboard</h1></header>
+    <main>
+      <section>
+        <div class="Side">
+          <div class="fstSect">
+            <h3>Recent Scores</h3>
+            <button class="btn">Refresh</button>
+          </div>
+          <ul class="recentScores"></ul>
+        </div>
+        <form autocomplete="off">
+          <label>Add your score</label>
+          <input type="text" id="name" required /><input type="number" id="score" required />
+          <button id="submit" class="btn" type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h3 class="copyRights">Copy rights reserved to <a href="https://github.com/GeekyHacks">geekyhacks</a></h3>
+    </footer>
   </body>
 </html>

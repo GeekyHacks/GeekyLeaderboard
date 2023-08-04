@@ -15,6 +15,5 @@ export const addScore = async (user, score) => {
 export const getScore = async (APIUrl) => {
   const response = await fetch(APIUrl);
   const dataList = await response.json();
-  console.log(dataList.result);
   return dataList.result;
 };

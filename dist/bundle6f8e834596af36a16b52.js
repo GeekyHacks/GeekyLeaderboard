@@ -63,9 +63,8 @@ var getScore = /*#__PURE__*/function () {
           return response.json();
         case 5:
           dataList = _context2.sent;
-          console.log(dataList.result);
           return _context2.abrupt("return", dataList.result);
-        case 8:
+        case 7:
         case "end":
           return _context2.stop();
       }
@@ -842,17 +841,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
-var submitBtn = document.getElementById('submit');
+var submit = document.getElementById('scoreForm');
 window.addEventListener('load', function () {
   (0,_modules_displayList_js__WEBPACK_IMPORTED_MODULE_2__.renderList)();
 });
 // this will add userScore to the APi
-submitBtn.addEventListener('click', /*#__PURE__*/function () {
+submit.addEventListener('submit', /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          event.preventDefault();
+          if (_modules_displayList_js__WEBPACK_IMPORTED_MODULE_2__.score.value === '' && _modules_displayList_js__WEBPACK_IMPORTED_MODULE_2__.user.value === '') {
+            event.preventDefault();
+          }
           _context.next = 3;
           return (0,_modules_api_js__WEBPACK_IMPORTED_MODULE_1__.addScore)(_modules_displayList_js__WEBPACK_IMPORTED_MODULE_2__.user.value, _modules_displayList_js__WEBPACK_IMPORTED_MODULE_2__.score.value);
         case 3:
@@ -894,4 +895,4 @@ refresh.addEventListener('click', /*#__PURE__*/function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle5b9169b4deaffb886ce1.js.map
+//# sourceMappingURL=bundle6f8e834596af36a16b52.js.map

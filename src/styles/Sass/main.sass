@@ -26,10 +26,10 @@ h1
 
 h3
     font-size: 1rem
-    
-li, input, a
+
+li, input, a, .copyRights
     border-radius: .15rem
-    font-size: .8rem
+    font-size: .7rem
 
 header
     margin-top: 2rem
@@ -41,12 +41,12 @@ section
     align-items: stretch
     gap: .4rem
     white-space: nowrap
-    font-size: 1rem
+    font-size: .8rem
 
 .btn
     @include button
 
-.Side
+.Side, form
     flex: 1
     gap: .5rem
     @include columnFlex
@@ -55,9 +55,14 @@ section
     background: $secondary-color
     box-shadow: $box-shadow
     border-radius: .2rem
+    height: 80vh
+    width: 40vw
 
     .btn
         align-self: flex-end
+
+.Side
+    overflow: scroll
 
 .fstSect
     @include rowFlex
@@ -70,19 +75,22 @@ section
     gap: .2rem
     @include columnFlex
     text-align: left
+    justify-content: center
+    align-items: stretch
 
     li
         border: 1px black solid
+        text-align: left
         padding: .2rem
 
 input
     padding: .2rem
 
 footer
-    position: fixed
-    top: auto
-    bottom: .6rem
-    // width: 100%
+    position: relative
+    margin-top: 2rem
+    top: 0
+    bottom: 0.1rem
 
 @media ( min-width: 768px  )
     body

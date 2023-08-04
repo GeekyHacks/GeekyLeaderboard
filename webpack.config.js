@@ -48,6 +48,26 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'], // other stuff
+    fallback: {
+      assert: false,
+      constants: false,
+      os: false,
+      querystring: false,
+      vm: false,
+      url: false,
+      http: false,
+      https: false,
+      stream: false,
+      util: false,
+      fs: false,
+      crypto: false,
+      zlib: false,
+      buffer: false,
+      path: require.resolve('path-browserify'),
+    },
+  },
   // this will build the dist html file based on the template file
   plugins: [
     new HtmlWebpackPlugin({

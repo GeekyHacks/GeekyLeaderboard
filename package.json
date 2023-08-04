@@ -21,6 +21,7 @@
     "eslint-plugin-import": "^2.27.5",
     "hint": "^2.0.0",
     "html-webpack-plugin": "^5.5.3",
+    "jest-worker": "^29.6.2",
     "path-browserify": "^1.0.1",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
@@ -29,8 +30,12 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
+    "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "request": "^2.79.0"
   }
 }

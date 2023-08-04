@@ -47,7 +47,7 @@ section
     @include button
 
 .Side
-    flex: 1
+    flex: 1.5
     gap: .5rem
     @include columnFlex
     justify-content: center
@@ -56,18 +56,20 @@ section
     background: $secondary-color
     box-shadow: $box-shadow
     border-radius: .2rem
-    // overflow-y: scroll
-    height: 250px
+    overflow: scroll
+    height: 30rem
 
     .btn
         align-self: flex-end
+
 form
     flex: 1
     gap: .5rem
     @include columnFlex
-    justify-content: start
+    justify-content: center
+    align-items: stretch
     padding: .5rem .2rem
-    // background: $secondary-color
+    background: $secondary-color
     box-shadow: $box-shadow
     border-radius: .2rem
 
@@ -85,7 +87,12 @@ form
 
     li
         border: 1px black solid
+        text-align: left
+        @include rowFlex
         padding: .2rem
+        .score
+            background: $secondary-color
+            border: 0
 
 input
     padding: .2rem

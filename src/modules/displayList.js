@@ -1,4 +1,4 @@
-import { UsageState } from 'webpack';
+// import { UsageState } from 'webpack';
 import { gameUrl } from './api.js';
 
 export const user = document.getElementById('name');
@@ -25,9 +25,13 @@ export const renderList = async (listData) => {
     console.log(objects);
     objects.forEach((object) => {
       let li = document.createElement('li');
-      li.innerHTML = `${object.user}: ${object.score}`;
+      li.innerHTML = `
+      ${object.user}:${object.score}
+       `;
       uList.appendChild(li);
     });
+    
+    // <input  class="score" readonly value="${object.user}" type="text">:<input readonly type="text" value="${object.score}" class="score">
 
     console.log(li);
     console.log(uList);

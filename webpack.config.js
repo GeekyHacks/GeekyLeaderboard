@@ -51,6 +51,8 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'], // other stuff
     fallback: {
+      assert: false,
+      constants: false,
       os: false,
       querystring: false,
       vm: false,

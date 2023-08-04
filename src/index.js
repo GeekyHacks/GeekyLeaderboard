@@ -14,3 +14,10 @@ submitBtn.addEventListener('click', async (event) => {
   event.preventDefault();
   await addScore(user.value, score.value);
 });
+
+// will use it next project
+// const refresh = document.getElementById('refresh');
+
+// refresh.addEventListener('click', async () => {
+//   await deleteAPI(gameID);
+// });

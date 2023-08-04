@@ -1,10 +1,8 @@
-// import { UsageState } from 'webpack';
 import { gameUrl } from './api.js';
 
 export const user = document.getElementById('name');
 export const score = document.getElementById('score');
-const uList = document.querySelector('.recentScores');
-let sortList = (array) => {
+const sortList = (array) => {
   const sortedArr = [array];
   sortedArr.sort((a, b) => a.index - b.index);
   return sortedArr;
@@ -15,25 +13,16 @@ export const renderList = async (listData) => {
   uList.innerHTML = '';
   const response = await fetch(gameUrl);
   listData = await response.json();
-  console.log(listData);
   const sortedDataList = sortList(listData.result);
-  console.log(sortedDataList);
-  const li = document.createElement('li');
 
-  for (let i = 0; i < sortedDataList.length; i++) {
+  for (let i = 0; i < sortedDataList.length; i += 1) {
     const objects = sortedDataList[i];
-    console.log(objects);
     objects.forEach((object) => {
-      let li = document.createElement('li');
+      const li = document.createElement('li');
       li.innerHTML = `
       ${object.user}:${object.score}
        `;
       uList.appendChild(li);
     });
-    
-    // <input  class="score" readonly value="${object.user}" type="text">:<input readonly type="text" value="${object.score}" class="score">
-
-    console.log(li);
-    console.log(uList);
   }
 };
